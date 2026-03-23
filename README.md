@@ -28,6 +28,16 @@ Personal AI coding skills and configurations for [Claude Code](https://docs.anth
 | [plannotator-last](commands/plannotator-last.md) | Annotate the last rendered assistant message |
 | [plannotator-review](commands/plannotator-review.md) | Open interactive code review for current changes or a PR URL |
 
+## Config
+
+[`config/settings.json`](config/settings.json) — hooks, plugins, and attribution settings:
+
+- **Hooks** — macOS sound notifications for lifecycle events (session start, stop, failure, compaction) + agent-deck handler
+- **Plugins** — engram (memory), explanatory-output-style, code-review-graph, agent-deck
+- **Attribution** — empty (no co-author on commits/PRs)
+
+> **Note:** Sound hooks use `afplay` (macOS only). Agent-deck hooks require [agent-deck](https://github.com/asheshgoplani/agent-deck) installed.
+
 ## Installation
 
 Copy skills and commands into your Claude Code directory:
